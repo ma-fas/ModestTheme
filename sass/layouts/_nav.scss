@@ -1,0 +1,77 @@
+.navbar {
+	background: darken($dark, 10%);
+	border-radius: 0;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+ 
+.navbar-header {
+	margin: 10px 0;
+}
+
+.navbar-toggle {
+		.icon-bar{
+		background-color: $light;
+		width: 26px;
+		height: 3px;
+	}
+
+	&:hover .icon-bar {
+		opacity: 0.6;
+	}
+}
+.navbar-right {
+	margin: 25px 0;
+	vertical-align: middle;
+
+		li {
+		position: relative;
+		display: block;
+		font-size: 1em;
+		text-align: center;
+		margin: 5px 0;
+
+		a {
+			color: darken($light, 40%);
+			font-size: 1.1em;
+			font-weight: 600;
+			text-transform: uppercase;
+			border: 2px solid transparent;
+			border-radius: 5px;
+			padding: 20px 10px;
+			@include trans-all;
+		}
+	}
+
+	li:hover a {
+		background: transparent;
+		border: 2px solid darken($light, 40%);
+		outline: none;
+	}
+
+	
+	.active a,
+	.active a:focus {
+		color: $btn_accent;
+		background: transparent;
+		border: 2px solid $btn-accent;
+		opacity: 1;
+		outline: none;
+	}
+	.active a,
+	.active:hover a,
+	.active:focus a,
+	.active:active a {
+		color: $btn_accent;
+		opacity: 0.8;
+	}
+
+	.active,
+	.active:focus,
+	.active:hover,
+	.active:active {
+		color: $btn_accent;
+		opacity: 0.8;
+	}
+}
+

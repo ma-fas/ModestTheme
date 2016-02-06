@@ -1,0 +1,48 @@
+/* NAVBAR TOGGLE */
+
+.navbar-toggle {
+	border: none;
+	border-radius: 0;
+
+	.icon-bar {
+		color: rgba(255,255,255,1);
+	}
+}
+
+/* BUTTONS */
+
+.btn-accent {
+	@include add-btn($btn_accent);
+}
+
+.btn-centered {
+	display: block;
+	margin: 30px auto 0;
+}
+
+form .btn {
+	border: 2px solid $btn_accent;
+	background: $btn_accent;
+	color: $light;
+	&:hover {
+		background: transparent;
+		color: $btn-accent;
+		border: 2px solid $btn-accent;
+	}
+}
+
+.btn-control {
+	background: $light;
+	color: $dark;
+	opacity: 0.5;
+	width: 30px;
+	height: 30px;
+	@include trans-all;
+	border-radius: 5px;
+	margin: 0 5px 5px 0;
+
+	&:hover {
+		opacity: 1;
+		color: $btn_accent;
+	}
+}

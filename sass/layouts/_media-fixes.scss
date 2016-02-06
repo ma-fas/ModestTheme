@@ -1,0 +1,161 @@
+@media (min-width: 768px) {
+
+	.navbar-collapse {
+		padding: 0;
+	}
+	.navbar-right {
+		margin: 2% 0;
+
+		li {
+			margin: 2px;
+
+			a {
+				padding: 3px 7px;
+			}
+		}
+	}
+
+	.carousel-caption {
+		left: 9%;
+	}
+	
+	.list-inline > li {
+		padding: 0px;
+	}
+
+	section a.i-social {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+
+		.fa-2x {
+			font-size: 2em;
+			line-height: 60px;
+		}
+	}
+
+	.about-side {
+		padding-top: 0;
+
+		span {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		h5, p {
+			margin-left: 2%;
+		}
+	}
+
+	.team-unit {
+		float: left;
+		width: 35%;
+		margin: 15px 7.5%;
+	}
+	
+	.blog-unit {
+
+		.img-responsive {
+			width: 100%;
+			margin: 0 auto;
+		}
+		
+		.media-body {
+			text-align: left;
+		}
+	}
+
+	.work-unit {
+		width: 100%;
+
+		.media-heading {
+			padding: 15px;
+		}
+	}
+	
+	.media-cards {
+		width: 100%;
+	}
+	.footer-copy {
+		float: left;
+		margin-bottom: 0px;
+	}
+
+	footer.list-inline {
+		float: right;
+	}
+	
+	form {
+		position: absolute;
+		display: block;
+		top: -110px;
+		left: 0;
+		background: $light;
+		padding: 15px;
+	}
+
+	.form-group {
+		width: 49%;
+		&:first-of-type {
+			margin-right: 2%;
+		}
+		&:last-of-type {
+			width: 100%;
+		}
+	}
+
+	textarea {
+		height: 210px;
+	}
+
+	footer nav {
+		float: right;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.navbar-right {
+		margin: 2% 0;
+
+		li {
+			margin: 4px;
+
+			a {
+				padding: 3px 8px;
+			}
+		}
+	}
+	.carousel-caption {
+		top: 18%;
+		left: 10%;
+	}
+
+	.about-side span {
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+		}
+
+	.team-unit {
+		width: 22%;
+		margin: 20px 2%;
+
+		&.team1{
+			margin-left: 0;
+		}
+		&.team4 {
+			margin-right: 0;
+		}
+	}
+
+	form {
+		position: absolute;
+		display: block;
+		top: -150px;
+		left: 0;
+		background: $light;
+		padding: 20px 25px;
+	}
+}

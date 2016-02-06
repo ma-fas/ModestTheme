@@ -1,0 +1,47 @@
+.jumbotron {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.carousel-inner .item {
+	min-height: 450px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+
+	&.container{
+		max-width: 970px;
+	}
+	img {
+		min-height: 450px;
+	} 
+}
+
+.item.carousel-item1 {background-image: url('../img/bg.png');}
+.item.carousel-item2 {background-image: url('../img/bg.png');}
+.item.carousel-item3 {background-image: url('../img/bg.png');}
+
+.carousel-caption {
+	text-align: left;
+	padding-left: 0;
+	right: null;
+	left: 5%;
+	top: 10%;
+
+	h1 {
+		font-size: 2.1em;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 1em;
+		color: darken($light, 20%);
+		margin-bottom: 40px;
+	}
+}
+
+#carouselButtons {
+	right: 0;
+	position: absolute;
+	bottom: 0;
+}

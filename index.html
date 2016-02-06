@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modest PSD Template</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://maps.googleapis.com/maps/api/js"
+         ></script> 
+    <script>
+    	function initialize() {
+	        var mapCanvas = document.getElementById('map');
+	        var mapOptions = {
+	          center: new google.maps.LatLng(23.0225, 72.57136),
+	          zoom: 15,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP,
+	          scrollwheel: false,
+	          disableDefaultUI: true
+	        }
+	        var map = new google.maps.Map(mapCanvas, mapOptions)
+	      }
+	      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+	<!-- navigation bar -->
+	<nav class="navbar fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            	<ul class="nav navbar-nav navbar-right">
+            		<li class="active"><a href="#home">Home</a></li>
+            		<li><a href="#about">About</a></li>
+            		<li><a href="#work">Work</a></li>
+            		<li><a href="#team">Team</a></li>
+            		<li><a href="#services">Services</a></li>
+            		<li><a href="#features">Features</a></li>
+            		<li><a href="#contact">Contact</a></li>
+            	</ul>
+            </div>
+		</div>
+	</nav>
+	<!-- jumbotron -->
+	<header class="jumbotron">
+		<div id="mycarousel" class="carousel slide" data-ride="carousel">
+	        <div class="carousel-inner" role="listbox">
+            	<div class="item active carousel-item1">
+						<div class="row">
+							<div class="carousel-caption col-xs-10 col-sm-5">
+								<h1>Welcome to our marketplace</h1>
+								<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+								<button type="button" class="btn btn-accent">View more</button>
+								<button type="button" class="btn btn-accent">Video Tour</button>
+							</div>
+						</div>
+				</div>
+				<div class="item carousel-item2">
+            		<div class="container">
+						<div class="row">
+							<div class="carousel-caption col-xs-10 col-sm-5">
+								<h1>Welcome to our marketplace</h1>
+								<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+								<button type="button" class="btn btn-accent">View more</button>
+								<button type="button" class="btn btn-accent">Video Tour</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item3">
+            		<div class="container">
+						<div class="row">
+							<div class="carousel-caption col-xs-10 col-sm-5">
+								<h1>Welcome to our marketplace</h1>
+								<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+								<button type="button" class="btn btn-accent">View more</button>
+								<button type="button" class="btn btn-accent">Video Tour</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="btn-group" id="carouselButtons">
+                    <button class="btn btn-xs btn-control" id="carousel-pause">
+                        <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+                    </button>
+                    <button class="btn btn-xs btn-control" id="carousel-play">
+                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <ol class="carousel-indicators">
+	                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+	                <li data-target="#mycarousel" data-slide-to="1"></li>
+	                <li data-target="#mycarousel" data-slide-to="2"></li>
+	            </ol>
+			</div>
+		</div>
+	</header>
+	
+	
+		<!-- about section -->
+	<section>
+		<div class="container">
+			<h2><span class="header-deco"></span>We are modest.</h2>
+			<div class="row">
+				<div class="col-xs-12 col-sm-7">
+					<p>Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus.</p>
+					<p>Phasellus sollicitudin ante eros ornare, <span>sit amet luctus lorem semper.</span> Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum</p>
+					<ul class="list-inline ul-social">
+						<li><a class="i-social" href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+						<li><a class="i-social" href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+						<li><a class="i-social" href="#"><i class="fa fa-google fa-2x"></i></a></li>
+						<li><a class="i-social" href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+						<li><a class="i-social" href="#"><i class="fa fa-behance fa-2x"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-5">
+					<div class="about-side">
+						<div class="col-xs-2"><span>01</span></div>
+						<div class="col-xs-10">
+							<h5>Dedication to customers</h5>
+							<p>Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus.</p>
+						</div>
+					</div>
+					<div class="about-side">
+						<div class="col-xs-2"><span>02</span></div>
+						<div class="col-xs-10">
+							<h5>Working closely with our clients</h5>
+							<p>Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh.</p>
+						</div>
+					</div>
+					<div class="about-side">
+						<div class="col-xs-2"><span>03</span></div>
+						<div class="col-xs-10">
+							<h5>Increase happiness</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod.</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+		
+
+
+		<!-- meet the team section -->
+	<section>
+		<div class="container">
+			<h2><span class="header-deco"></span>Meet the team.</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="media media-wrap">
+						<div class="team-unit team1">
+							<div class="overlay-team-unit">
+								<div class="overlay-icons">
+									<a href=""><i class="fa fa-twitter fa-2x"></i></a>
+									<a href=""><i class="fa fa-facebook fa-2x"></i></a>
+									<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="team-unit-footer">
+								<h5 class="media-heading">George Bromley</h5>
+								<p>CEO and Founder</p>
+							</div>
+						</div>
+						<div class="team-unit team2">
+							<div class="overlay-team-unit">
+								<div class="overlay-icons">
+									<a href=""><i class="fa fa-twitter fa-2x"></i></a>
+									<a href=""><i class="fa fa-facebook fa-2x"></i></a>
+									<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="team-unit-footer">
+								<h5 class="media-heading">Paul Torres</h5>
+								<p>Head of development</p>
+							</div>
+						</div>
+						<div class="team-unit team3">
+							<div class="overlay-team-unit">
+								<div class="overlay-icons">
+									<a href=""><i class="fa fa-twitter fa-2x"></i></a>
+									<a href=""><i class="fa fa-facebook fa-2x"></i></a>
+									<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="team-unit-footer">
+								<h5 class="media-heading">Judith Gillette</h5>
+								<p>Graphic Designer</p>
+							</div>
+						</div>
+						<div class="team-unit team4">
+							<div class="overlay-team-unit">
+								<div class="overlay-icons">
+									<a href=""><i class="fa fa-twitter fa-2x"></i></a>
+									<a href=""><i class="fa fa-facebook fa-2x"></i></a>
+									<a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+								</div>
+							</div>
+							<div class="team-unit-footer">
+								<h5 class="media-heading">Delroy Reed</h5>
+								<p>Client Service Director</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+		<!-- work section-->
+	<section class="alternate" id="work">
+		<div class="container">
+			<h2><span class="header-deco"></span>Lovely work.</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="media content-center">
+						<div class="media-work col-xs-12 col-sm-6 col-md-4">
+							<div class="work-unit">
+								<img class="media-object img-responsive" src="img/work1.jpg" alt="Partnership guidelines">
+								<div class="work-overlay">
+									<a href="#"><i class="fa fa-plus fa-2x"></i></a>
+									<h4 class="media-heading">Partnership Guidelines</h4>
+								</div>
+							</div>
+						</div>
+						<div class="media-work col-xs-12 col-sm-6 col-md-4">
+							<div class="work-unit">
+								<img class="media-object img-responsive" src="img/work2.jpg" alt="Partnership guidelines">
+								<div class="work-overlay">
+									<a href="#"><i class="fa fa-plus fa-2x"></i></a>
+									<h4 class="media-heading">Partnership Guidelines</h4>
+								</div>
+							</div>
+						</div>
+						<div class="media-work col-xs-12 col-sm-6 col-md-4">
+							<div class="work-unit">
+								<img class="media-object img-responsive" src="img/work3.jpg" alt="Partnership guidelines">
+								<div class="work-overlay">
+									<a href="#"><i class="fa fa-plus fa-2x"></i></a>
+									<h4 class="media-heading">Partnership Guidelines</h4>
+								</div>
+							</div>
+						</div>
+						<div class="media-work col-xs-12 col-sm-6 col-md-4">
+							<div class="work-unit">
+								<img class="media-object img-responsive" src="img/work4.jpg" alt="Partnership guidelines">
+								<div class="work-overlay">
+									<a href="#"><i class="fa fa-plus fa-2x"></i></a>
+									<h4 class="media-heading">Partnership Guidelines</h4>
+								</div>
+							</div>
+						</div>
+						<div class="media-work col-xs-12 col-sm-6 col-md-4">
+							<div class="work-unit">
+								<img class="media-object img-responsive" src="img/work5.jpg" alt="Partnership guidelines">
+								<div class="work-overlay">
+									<a href="#"><i class="fa fa-plus fa-2x"></i></a>
+									<h4 class="media-heading">Partnership Guidelines</h4>
+								</div>
+							</div>
+						</div>
+						<div class="media-work col-xs-12 col-sm-6 col-md-4">
+							<div class="work-unit">
+								<img class="media-object img-responsive" src="img/work6.jpg" alt="Partnership guidelines">
+								<div class="work-overlay">
+									<a href="#"><i class="fa fa-plus fa-2x"></i></a>
+									<h4 class="media-heading">Partnership Guidelines</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-accent btn-centered" type="button">Show me more</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- what we do section --> 
+	<section>
+		<div class="container">
+			<h2><span class="header-deco"></span>What we do.</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="media media-cards">
+						<div class="col-xs-12 col-sm-6 col-md-3 card1">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">Easy theme setup</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card2">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">Pixel perfect design</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card3">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">Responsive display</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card4">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">24/7 support</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card1">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">Easy theme setup</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card2">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">Pixel perfect design</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card3">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">Responsive display</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 card4">
+							<span></span>
+							<div class="media-body">
+								<h5 class="media-heading">24/7 support</h5>
+								<p>Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- features section -->
+	<section class="alternate">
+		<div class="container">
+			<h2><span class="header-deco"></span>Features.</h2>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="media content-center">
+						<div class="col-xs-12 col-sm-4 blog-unit">
+							<div>
+								<img class="media-object img-responsive" src="img/post1.jpg" alt="Blog post 1">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Product design: eames chairs</h4>
+								<p>Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 blog-unit">
+							<div>
+								<img class="media-object img-responsive" src="img/post2.jpg" alt="Blog post 1">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">ELEGANT AND COLORFUL LOGOS</h4>
+								<p>I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it.</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 blog-unit">
+							<div>
+								<img class="media-object img-responsive" src="img/post3.jpg" alt="Blog post 1">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">A SHOWCASE OF CREATIVE</h4>
+								<p>It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style.</p>
+							</div>
+						</div>					
+					</div>
+				</div>			
+			</div>
+		</div>
+	</section>
+
+		<!-- stay in touch section -->
+	<section>
+		<div class="container">
+			<h2><span class="header-deco"></span>Stay in touch.</h2>
+		</div>
+
+		<!-- map -->
+		<div id="map"></div>
+
+		<!-- contact info subsection -->
+		<div class="container">
+			<div class="row relative">
+				<div class="col-xs-12 col-sm-6 contact">
+					<h4>Contact information</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida.</p>
+					<p>Cras fermentum elit quis magna congue, <span>vel sodales</span> arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 pull-right">
+					<form role="form">
+						<div class="form-group col-xs-12 col-sm-6">
+							<label for="name" class="control-label">Your Name</label>
+							<input type="text" id="name" name="name" type="form-control">
+						</div>
+						<div class="form-group col-xs-12 col-sm-6">
+							<label for="email" class="control-label">Your Email</label>
+							<input type="email" id="email" name="email" type="form-control">
+						</div>
+						<div class="form-group col-xs-12">
+							<label for="msg" class="control-label">Your Message</label>
+							<textarea class="col-xs-12" name="msg" id="msg"></textarea>
+						</div>
+						<button type="submit" class="btn btn-accent">Send message</button>
+					</form>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="alternate">
+		<div class="container">
+			<div class="col-xs-12 col-sm-7">
+				<p class="footer-copy">Copyright 2014 by PSD Booster. All rights reserved</p>
+			</div>
+			<div class="col-xs-12 col-sm-5">
+				<nav class="nav">
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype"></i></a></li>
+						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

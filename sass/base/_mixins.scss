@@ -1,0 +1,30 @@
+  @mixin add-background($color) {
+	background: $color;
+	@if $color == $light {
+		color: $dark;
+	} @else if $color == $dark {
+		color: $light;
+	} @else if $color == $btn_accent {
+		color: $light;
+	} @else if $color == $btn2_accent {
+		color: $light;
+	} 
+}
+
+@mixin trans-all { 
+	transition: all 0.5s ease-out;
+}
+
+@mixin add-btn($color) {
+		background: transparent;
+		color: darken($light, 40%);;
+		border: 2px solid darken($light, 40%);
+
+	&:hover {
+		border: 2px solid transparent;
+		background: $color;
+		color: $light;
+		@include trans-all;
+	}
+}
+

@@ -1,0 +1,66 @@
+/* FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans|Open+Sans:400,700,600);
+$text_slab: 'Open Sans', sans-serif;
+$heading_slab: 'Quattrocento Sans', sans-serif;
+
+body {
+	font-family: $text_slab;
+}
+
+h1, h2, h3, h5, h6, button {
+	font-family: $heading_slab;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.15em;
+	line-height: 1.6em;
+	color: $text;
+}
+
+h2 {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 0px 50px;
+}
+
+h4 {
+	font-family: $heading_slab;
+	text-transform: uppercase;
+	font-size: 1.24em;
+}
+
+
+.header-deco {
+	display: inline-block;
+	background: $icon_accent;
+	width: 10px;
+	height: 35px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+
+/* FONT AWESOME ICONS*/
+
+section a.i-social {
+	display: inline-block;
+	color: $light;
+	background: $icon_accent;
+	width: 40px;  //lg screen 60px
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	@include trans-all;
+
+	.fa-2x {
+		font-size: 1.5em;
+		line-height: 40px;
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+}
